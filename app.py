@@ -11,7 +11,7 @@ st.markdown("Predict the selling price of homes in Ames, Iowa using machine lear
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_excel("AmesHousing.xlsx")
+    df = pd.read_csv("AmesHousing.csv")  # <-- Updated to CSV
     return df
 
 df = load_data()
